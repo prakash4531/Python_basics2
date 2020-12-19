@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 """
 Problem No: 11 (Text Alignments)
@@ -26,7 +27,6 @@ Alignment: center
 output: -----Praveen-----
 
 """
-"""
 string = input('Enter your text here: ')
 alignment = input('Enter your alignment here: ')
 
@@ -38,33 +38,11 @@ left = string.ljust(width, '-')
 right = string.rjust(width, '-')
 center = string.center(width, '-')
 
-if alignment == left:
+if alignment == 'left':
     print(left)
-elif alignment == right:
+elif alignment == 'right':
     print(right)
-elif alignment == center:
+elif alignment == 'center':
     print(center)
 else:
-    print("Please give the alignment input from left,right and center: ")
-"""
-
-"""
-def text_alignment(string, alignment):
-    if alignment == left:
-        print(string.ljust(width, '-'))
-    elif alignment == right:
-        print(string.rjust(width, '-'))
-    elif alignment == center:
-        print(string.center(width, '-'))
-    else:
-        print("Please give the alignment input from left,right and center: ")
-    
-if __name__=='__main__':
-    string = str(input('Enter your text here: '))
-    alignment = input('Enter your alignment here: ')
-    width = 20
-    text_alignment1 = text_alignment(string, alignment)
-    print(text_alignment1)
-"""
-
-
+    print("Please write the alignment input from left,right and center: ")
